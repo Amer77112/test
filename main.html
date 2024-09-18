@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project</title>
+  
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="/home/kali/Desktop/fantom_project/main/css/styles.css">
+  
+  <!-- Boxicons CDN for Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="blur-bg"></div>
+  
+  <!-- Header with Navbar -->
+  <header class="header" id="header"> 
+    <nav class="navbar container">
+      <a href="javascript:location.reload()" class="brand">FANTOM</a>
+
+      <!-- Burger Menu Icon -->
+      <div class="burger" id="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </div>
+      
+      <!-- Navigation Menu -->
+      <div class="menu" id="menu">
+        <ul class="menu-inner">
+          <li class="menu-item"><a href="#" class="menu-link">login</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">about</a></li>
+          <li class="menu-item"><a href="#" class="menu-link">Support</a></li>
+          <li class="menu-item sound-button">
+            <button class="menu-link" onclick="playAudio()">🎵</button>
+            <audio id="audio" src="song.mp3"></audio>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Audio element -->
+      <audio id="backgroundAudio" loop>
+        <source src="calm-song.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+
+      <!-- Dark/Light Mode Switch -->
+      <button class="switch" id="switch">
+        <i class="switch-light bx bx-sun"></i>
+        <i class="switch-dark bx bx-moon"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Overlay for Mobile Menu -->
+  <div class="overlay"></div>
+
+  <!-- Main Content -->
+  <main class="main">
+    <section class="section banner banner-section" id="section1">
+      <div class="container banner-column">
+        <img class="banner-image" src="logo2.png" alt="Illustration">
+        <div class="banner-inner">
+          <h1 class="heading-xl rainbow-text">All your requirements by AI</h1>
+          <p class="paragraph">
+            We are here to provide all the AI categories you need
+          </p>
+          <a href="#section2" class="btn btn-darken btn-inline">
+            Get Started <i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Link to JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
